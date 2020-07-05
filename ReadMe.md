@@ -1,6 +1,6 @@
 <h1 align="center">
     <br/>
-    <a href="https://mybirdyapp.com"><img style="width:20px;height:20px;" src="https://github.com/mybirdy/mybirdy.github.io/blob/master/assets/logo.svg" alt="MyBirdy-Logo"/></a>
+    <a href="https://mybirdyapp.com"><img width="50px" src="https://github.com/mybirdy/mybirdy.github.io/blob/master/assets/logo.svg" alt="MyBirdy-Logo"/></a>
     <br/>
     MyBirdy Technologies
     <br/>
