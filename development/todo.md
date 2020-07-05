@@ -38,6 +38,7 @@ Test Setup:
 - [x] SEO Testing (HTML Compression, Javascript Minification) 
 - [x] Usability Testing (Mobile, Tablet and Desktop Compactible)(Platforms: iOS, Android)
 - [x] Performance Testing
+- [ ] Generate SiteMap & Robot.txt
 
 Final:
 - [ ] Google Analytics
