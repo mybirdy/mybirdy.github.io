@@ -1,6 +1,6 @@
 <h1 align="center">
     <br/>
-    <a href="https://mybirdyapp.com"><img src="https://github.com/mybirdy/mybirdy.github.io/blob/master/logo-%20Transperent.png" alt="MyBirdy-Logo"/></a>
+    <a href="https://mybirdyapp.com"><img src="https://github.com/mybirdy/mybirdy.github.io/blob/master/assets/logo.svg" alt="MyBirdy-Logo"/></a>
     <br/>
     MyBirdy Technologies
     <br/>
@@ -14,10 +14,11 @@
 ### About MyBirdy Technologies
 MyBirdy Technologies an emerging startup originated in Bangalore. Mybirdy Technologies consist of multiple platform applications, and other services to provide our clients from online ecommerce to other domains
 
-### Run Localy
+### Build Localy
     ```
     $ git clone <repo>
     $ cd mybirdy
+    $ cd development
     $ npm install
     $ npm run start:dev //development server 8080
     $ npm run start:prod // production dist folder
