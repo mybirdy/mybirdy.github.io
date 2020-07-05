@@ -38,9 +38,8 @@
 
     <!-- -->
     <title>MyBirdy Technologies : Home</title>
-    
-    <link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
-    
+    <link rel="preload stylesheet" as="style" href="https://unpkg.com/aos@next/dist/aos.css" />
+        
     <link rel="preload" href="<%=require('./assets/fonts/Volte Medium.woff')%>" as="font">
     <link rel="preload" href="<%=require('./assets/fonts/Volte.woff')%>" as="font">
 </head>
@@ -48,18 +47,18 @@
     <!-- Landing Page-->
     <div class="container landing" id="landing">
         <div class="titleContainer">
-            <img src="<%= require('./assets/images/logo.svg')%>" alt="MyBirdy-Logo" class="image logo">
+            <img data-src="<%= require('./assets/images/logo.svg')%>" alt="MyBirdy-Logo" class="image logo">
             <h1 class="title">MYBIRDY TECHNOLOGIES</h1>
         </div>
         <div class="downloadBar">
             <p class="available">NOW AVAILABLE ON</p>
             <div class="platformDownload">
                 <div class="androidContainer">
-                    <img class="image android" src="<%= require('./assets/images/android.svg')%>" alt="android-icon">
+                    <img class="image android" data-src="<%= require('./assets/images/android.svg')%>" alt="android-icon">
                     <a href="#"><button class="playstoreButton">PLAYSTORE</button></a> 
                 </div>
                 <div class="appleContainer">
-                    <img class="image apple" src="<%= require('./assets/images/apple.svg')%>" alt="apple-icon">
+                    <img class="image apple" data-src="<%= require('./assets/images/apple.svg')%>" alt="apple-icon">
                    <a href="#"><button class="appstoreButton">APPSTORE</button></a> 
                 </div>
             </div>
@@ -69,7 +68,7 @@
     <!-- About Page-->
     <div  id="about" class="container about">
         <img data-src="<%= require('./assets/images/Catch-bird.png')%>" alt="MyBirdy-Birdy" id="pic1" class="catchBird">
-        <div class="contentContainer">
+        <div class="contentContainer" data-aos="fade-right">
             <h2 class="title">about us</h2>
             <p class="content">Birdy is your personal messenger bringing the best
                 shopping experience by offering the best deals
@@ -82,7 +81,7 @@
     <!-- Product Page-->
     <div class="container product"  id="product">
         <div class="downloadContainer">
-            <div class="contentContainer">
+            <div class="contentContainer" data-aos="fade-left">
                 <h2 class="title">product & services</h2>
                 <p class="content">Become a proud Birdy now! Download our latest version
                     of the mybirdy app on android playstore or apple
@@ -110,7 +109,7 @@
     <!-- Team Page-->
     <div class="container team"  id="team">
         <h1 class="title">meet the birdies!</h1>
-        <div class="members">
+        <div class="members" data-aos="fade-up">
             <div class="containerImage">
                 <img data-src="<%= require('./assets/images/sharath.png')%>" alt="Sarath Chandra Vasiraju" class="member image-1">
                 <h3 class="title">Sarath Chandra</h3>
@@ -136,21 +135,21 @@
 
     <!-- Contact Page-->
     <div class="container contact"  id="contact">
-        <img src="<%= require('./assets/images/Call-svg.svg')%>" alt="MyBirdy-Support" class="catchBird">
+        <img data-src="<%= require('./assets/images/Call-svg.svg')%>" alt="MyBirdy-Support" class="catchBird">
         <div class="contentContainer">
             <h2 class="title">leave us a tweet!</h2>
                 <p class="content">Click to redirect</p>
-                <div class="contactWrap email">
+                <div class="contactWrap email" data-aos="slide-right" data-aos-delay="100">
                     <a href="mailto:contactusATmybirdyappDOTcom" onclick="this.href=this.href.replace(/AT/,'&#64;').replace(/DOT/,'&#46;')"   >
                         <p class="text">Send us a mail!</p>
                     </a>
                 </div>  
-                <div class="contactWrap phone">
-                    <a href="tel:+919900927025"   >
+                <div class="contactWrap phone" data-aos="slide-right" data-aos-delay="110">
+                    <a href="tel:+919900927025">
                         <p class="text">+91-9900927025</p>
                     </a>
                 </div>  
-                <div class="contactWrap maps">
+                <div class="contactWrap maps" data-aos="slide-right" data-aos-delay="120">
                     <a href="https://www.google.com/maps/place/My+Birdy+Technologies+Pvt.+Ltd/@13.0098743,77.6414567,15z/data=!4m5!3m4!1s0x0:0xa1bc95357479f105!8m2!3d13.0103761!4d77.6481944">
                         <p class="text">🗺️ Open on Google Maps</p>
                     </a>
@@ -196,5 +195,10 @@
                <h6 class="content">DESIGNED & DEVELOPED BY VAISHAKH ANIL</h6>
            </div>
     </footer>
+
+    <script async src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script async>
+      AOS.init();
+    </script>
 </body>
 </html>

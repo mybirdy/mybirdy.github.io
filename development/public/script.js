@@ -8,14 +8,14 @@ console.log(`%c  MYBIRDY TECHNOLOGIES
 \t===m""m===  
 `,"font-family:monospace");
 
-
 import Bound from 'bounds.js';
 
 const boundary = Bound({
-    margins:{top: 0}
+    margins:{top: 5}
 })
     
 const image = document.querySelectorAll('[data-src]');
+/* Lazy loading Images */
 const enter = (image) =>{
     return() =>{
         image.src = image.dataset.src;

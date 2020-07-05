@@ -23,7 +23,7 @@ Structure Setup:
 Styling Setup:
 - [x] SCSS Styling
 - [x] Image Loading and Optimization
-- [ ] Animations / Interactions
+- [x] Animations / Interactions
 - [x] Media Queries (BreakPoints: 200px, 900px, Retina2x)
 - [ ] SASS & JS clean up
 
@@ -38,7 +38,6 @@ Test Setup:
 - [x] SEO Testing (HTML Compression, Javascript Minification) 
 - [x] Usability Testing (Mobile, Tablet and Desktop Compactible)(Platforms: iOS, Android)
 - [x] Performance Testing
-- [ ] Generate SiteMap & Robot.txt
 
 Final:
 - [ ] Google Analytics
