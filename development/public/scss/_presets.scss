@@ -1,0 +1,58 @@
+@import '../../node_modules/include-media/dist/include-media'; /*Media Queries*/
+/* Declaring Global Variables */
+$bgColor: #ffffff;
+$tColor: #252029;
+$loaderColor: #8E00FF;
+
+/* Volte Font Declaration */
+@font-face{
+    font-family: 'Volte';
+    src: url('../assets/fonts/Volte.woff') format('woff');
+    font-weight: 100;
+    font-display: swap;
+}
+
+@font-face{
+    font-family: 'Volte';
+    src: url('../assets/fonts/Volte\ Light.woff') format('woff');
+    font-weight: 200;
+    font-display: swap;
+}
+
+@font-face{
+    font-family: 'Volte';
+    src: url('../assets/fonts/Volte\ Medium.woff') format('woff');
+    font-weight: 600;
+    font-display: swap;
+}
+
+
+@font-face{
+    font-family: 'Volte';
+    src: url('../assets/fonts/Volte\ Semibold.woff') format('woff');
+    font-weight: bold;
+    font-display: swap;
+}
+
+
+@font-face{
+    font-family: 'Volte';
+    src: url('../assets/fonts/Volte\ bold.woff') format('woff');
+    font-weight: 800;
+    font-display: swap;
+}
+
+/* Fonts Mixins*/
+@mixin fontPara($size,$color,$weight,$cSpacing,$lineHeight) {
+    font-family: 'Volte';
+    font-size: #{$size}vw;
+    font-weight: $weight;
+    letter-spacing: #{$cSpacing}em;
+    line-height: $lineHeight;
+    color: $color;
+}
+
+@mixin flexPara($direction){
+    display: flex;
+    flex-direction: $direction;
+}

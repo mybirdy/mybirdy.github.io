@@ -1,0 +1,62 @@
+@import '../scss/presets';
+
+*{
+    margin:0;
+    padding:0;
+    border:0;
+}
+
+.containerNotfound{
+    height: 100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: 8vw;
+        @include media(">=200px","<=900px"){
+            transform:scale(2.5);
+            padding-bottom: 1.5vh;
+            margin-right: 6vh;
+        }
+    }
+    .title{
+        font-size: 10vw;
+        font-weight: 800;
+        @include media(">=200px","<=900px"){
+           font-size: 30vw;
+        }
+    }
+    h6.title{
+        font-size: 2vw;
+        font-weight: 600;
+        @include media(">=200px","<=900px"){
+            font-size: 5vw;
+        }
+    }
+    .returnHome{
+        border: 1px solid black;
+        margin-top: 6vh;
+        padding: 4px 16px;
+        border-radius: 0.5em;
+        @include media(">=200px","<=tablet"){
+           padding: 6px 16px;
+        }
+        @include media(">=tablet","<=900px"){
+            padding: 4px 16px;
+         }
+        &:hover{
+            background-color: purple;
+            .content{color:white;}
+        }
+        a{text-decoration: none;}
+        .content{
+            font-size: 1vw;
+            @include media(">=200px","<=tablet"){
+               font-size:4vw;
+            } @include media(">=tablet","<=900px"){
+                font-size: 3vw;
+             }
+        }
+    }
+}

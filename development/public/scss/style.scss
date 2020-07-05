@@ -1,0 +1,381 @@
+@import './presets';
+
+/* Global Style*/
+*{
+    margin:0;
+    padding:0;
+    border:0;
+    overflow-x: hidden;
+    text-decoration: none;
+    scrollbar-width: thin;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+}
+
+.title{
+    @include fontPara(3,$tColor,600,0.15,1);
+    padding-bottom: 1vw;
+    @include media(">=200px","<=900px"){
+        font-size: 8vw;
+    }
+}
+.content{
+    @include fontPara(1.5,#000,100,0.054,1.5);
+    @include media(">=200px","<=900px"){
+        font-size: 4vw;
+    }
+}
+
+
+.downloadBar{
+    margin-top: 5vh;
+    @include flexPara(column);
+    align-items: center;
+    .available{
+        @include fontPara(1,#000,600,0.20,3.4);
+        @include media(">=200px","<=900px"){
+            font-size: 3vw;
+        }
+       
+    }
+    .platformDownload{
+        @include flexPara(row);
+        .androidContainer, .appleContainer{
+            margin: 1vh 2vw;
+            @include flexPara(column);
+            .android, .apple{
+                margin-bottom: 0.5vw;
+                align-self:center;
+                @include media(">=200px","<=900px"){
+                    margin-bottom: 1vh;
+                    transform: scale(0.8);
+                }
+            }
+            button{
+                border-radius: 0.92em;
+                padding: 0.8vw;
+                @include media(">=200px","<=900px"){
+                    padding: 1.3vw;
+                }
+                @include fontPara(1,#fff,600,0,1);
+                cursor: pointer;
+                @include media(">=200px","<=900px"){
+                    font-size: 2.5vw;
+                }
+            }
+            .playstoreButton{
+                background-image: linear-gradient(to bottom,#57C927,#049E42);
+            }
+            .appstoreButton{
+                background-image: linear-gradient(to bottom,#0AA7FA,#0F88F6);
+            }
+        }
+    }
+}
+
+
+.about, .product, .team, .contact{
+    @include media(">=200px","<=900px"){
+        flex-direction: column;
+        height: auto;
+        margin-bottom: 20%;
+    }
+}
+
+
+/* Specific styles*/
+.landing{
+    justify-content: center;
+    align-items: center;
+    @include flexPara(column);
+    @include media(">=200px","<=900px"){
+        height: 95vh;
+    }
+    .titleContainer{
+        @include flexPara(row);
+        align-items: center;
+
+        @include media(">=200px","<=900px"){
+            justify-self: center;
+            position: absolute;
+            padding-bottom: 20%;
+        }
+        .logo{
+            width: 6vw;
+            margin-right: 2vw;
+            @include media(">=200px","<=900px"){
+                width: 10vw;
+            }
+        }
+        .title{
+            @include fontPara(5,$tColor,600,0,1.20);
+            @include media(">=200px","<=900px"){
+                font-size: 6vw;
+            }
+        }
+    }
+    .downloadBar{
+        @include media(">=200px","<=900px"){
+           margin-top: 40%;
+        }
+    }
+}
+
+.about{
+    @include flexPara(row);
+    align-items: center;
+    @include media(">=200px","<=900px"){
+        flex-direction: column;
+    }
+    .catchBird{
+        width: 80%;
+        height: 90%;
+        @include media(">=200px","<=900px"){
+            width: 100%;
+            height: auto;
+            transform: scale(1);
+        }
+    }
+    .contentContainer{
+        width: 60%;
+        @include media(">=200px","<=900px"){
+            width: 90%;
+            height: 30%;
+        }
+    }
+
+}
+
+.product{
+    @include flexPara(row);
+    align-items: center;
+    @include media(">=200px","<=900px"){
+        flex-direction: column-reverse;
+    }
+    .downloadContainer{
+        @include flexPara(column);
+        align-items: center;
+        margin-left: 2vw;
+        .contentContainer{
+            width: 90%;
+            align-self: center;
+        }
+        .downloadBar{
+            @include media(">=200px","<=800px"){
+               margin-top: 10%;
+            }
+        }
+    }
+    .mybirdyApp{
+        @include media(">=200px","<=900px"){
+            width: 95vw;
+            height: auto;
+        }
+    }
+}
+
+
+/* @Todo  NavBar, Loading, Media Queries - overall: 10KB SASS Goal*/ 
+
+/* Teams Page*/
+.team{
+    justify-content: space-evenly;
+    align-items: center;
+    @include flexPara(column);
+    @include media(">=200px","<=800px"){
+        height: auto;
+     }
+    .title{
+        font-size: 2vw;
+        @include media(">=200px","<=900px"){
+           font-size: 8vw;
+        }
+    }
+    .members{
+        @include flexPara(row);
+        @include media(">=200px","<=900px"){
+            @include flexPara(column);
+        }
+        width: 90vw;
+        justify-content: space-evenly;
+        img{
+            width: 10vw;
+            border-radius: 20em;
+            @include media(">=200px","<=900px"){
+                width: 25vw;
+                border-radius: 0.5em;
+            }
+            
+        }
+        a{text-decoration: none;}
+        .containerImage{
+            @include flexPara(column);
+            justify-content: center;
+            align-items: center;
+            @include media(">=200px","<=900px"){
+                height: 100%;
+                margin-bottom: 5px;
+                margin-top: 10px;
+            }
+        }
+        .title{
+            margin-top: 1.5vh;
+            font-size: 1.5vw;
+            @include media(">=200px","<=900px"){
+               font-size: 4vw;
+            }
+        }
+        .content{
+            font-size: 1vw;
+            margin-top: -2.5vh;
+            @include media(">=200px","<=900px"){
+                margin-top: 0vh;
+                font-size: 3vw;
+             }
+        }
+    }
+}
+
+.contact{
+    justify-content: space-evenly;
+    align-items:center;
+    img{
+        transform:scale(1.2);
+        @include media(">=200px","<=800px"){
+            transform:scale(1);
+            margin-bottom: 20px;
+        }
+        
+    }
+    a{text-decoration: none};
+    .contentContainer{
+        height: 40%;
+        @include flexPara(column);
+        justify-content: center;
+        align-items: center;
+    }
+    .contactWrap{
+        width: 60%;
+        border-radius: 20em;
+        padding: 0.6em 0.9em;
+        text-align: center;
+        @include fontPara(1,rgb(226, 226, 226),600,0.04,1);
+        margin-bottom: 3vh;
+        @include media(">=200px","<=800px"){
+            font-size: 	0.813em;
+            padding: 1em 1em;
+         }
+        .text{
+            color: white;
+        }
+    }
+    .email{background-color:rgb(148, 76, 9); box-shadow: 2px 2px 4px rgba(148, 76, 9, 0.589);}
+    .phone{background-color:rgb(3, 57, 144); box-shadow: 2px 2px 4px rgba(3, 57, 144, 0.589);}
+    .maps{background-color:rgb(128, 5, 128); box-shadow: 2px 2px 4px rgba(128, 5, 128, 0.589)}
+}
+
+.final{
+    @include flexPara(row);
+    align-items:center;
+    height: auto;
+    @include media(">=200px","<=900px"){
+       flex-direction: column;
+    }
+   .mybirdyVideo{
+       width:60%;
+    @include media(">=200px","<=900px"){
+        width: 100%;
+    }
+   }
+    .downloadBar{
+        justify-content: center;
+        width: 40%;
+        @include media(">=200px","<=900px"){
+            width: 100%;
+        }
+        .title{
+            font-size: 2vw;
+            @include media(">=200px","<=900px"){
+                font-size: 4vw;
+            }
+        }
+        .available{
+            font-size: 0.8vw;
+            @include media(">=200px","<=900px"){
+                font-size: 3vw;
+            }
+        }
+    }
+}
+
+.footerClass{
+    @include flexPara(column);
+    height: auto;
+    background-color: rgb(12, 12, 12);
+    @include media(">=200px","<=900px"){
+        align-items: center;
+        height: auto;
+    }
+    .title{
+        font-size: 1vw;color:white;
+    }
+    .footerNav{
+        @include flexPara(row);
+        justify-content: space-evenly;
+        margin-top: 4%;
+
+        @include media(">=200px","<=900px"){
+            @include flexPara(column);
+            justify-content: space-around;
+            align-items: center;
+            height: 40vh;
+            .title{font-size: 3vw;}
+        }
+        .title:hover{
+            color: gold;
+        }
+    }
+    .socialLinks{
+        @include flexPara(row);
+        align-self:center;
+        justify-content: space-between;
+        width: 40%;
+        transform: scale(0.5);
+        @include media(">=200px","<=900px"){
+            width: 100%;
+        }
+        .icons{
+            width: 6vw;
+            height: 8vh;
+            padding:0 10px 0 10px;
+            @include media(">=200px","<=900px"){
+                width: 10vw;
+                height: 13vh;
+            }
+        }
+    }
+    .copyrights{
+        @include flexPara(column);
+        align-items:center;
+        margin-top: 2%;
+        @include media(">=200px","<=900px"){
+            .title{
+                font-size: 3vw;
+                margin-bottom:0;
+            }
+        }
+        .title{margin-bottom:-1%;}
+        .content{
+            font-size:0.7vw;
+            color: white;
+            @include media(">=200px","<=900px"){
+                font-size: 2vw;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
