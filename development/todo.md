@@ -10,12 +10,12 @@ SEO Setup:
  
 Structure Setup:
 - [x] File Structure Clean up
+- [ ] ARIA Text and HTML5 Microdata
 - [x] SVG, PNG and Image Loader Test
 - [x] 404 Setup
 - [x] Custom 404 Page Design
 - [x] Setup GitPages custom 404 Page - [Git docs](https://help.github.com/en/github/working-with-github-pages/creating-a-custom-404-page-for-your-github-pages-site)
 - [x] Index HTML Structure
-- [ ] ARIA Text and HTML5 Microdata 
 - [x] Fix Lazy Loading using Bounds.JS
 - [x] @TODO Pages: Home, About, Product, Teams, Contact
 - [ ] @Todo Actions:NavBar, Loading
