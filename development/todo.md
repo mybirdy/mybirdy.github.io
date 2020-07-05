@@ -23,7 +23,7 @@ Structure Setup:
 Styling Setup:
 - [x] SCSS Styling
 - [x] Image Loading and Optimization
-- [x] Animations / Interactions
+- [ ] Animations / Interactions
 - [x] Media Queries (BreakPoints: 200px, 900px, Retina2x)
 - [ ] SASS & JS clean up
 

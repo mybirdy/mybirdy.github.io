@@ -55,7 +55,7 @@
                 margin-bottom: 2vh;
 
                 @include media(">=200px","<=900px"){
-                    margin-bottom: 2vh;
+                    margin-bottom: 1vh;
                     width: 6vw;
                     height: 6vw;
                 }
@@ -63,13 +63,14 @@
             button{
                 border-radius: 0.92em;
                 padding: 0.8vw;
-                @include media(">=200px","<=900px"){
-                    padding: 1.3vw;
-                }
                 @include fontPara(1,#fff,600,0,1);
                 cursor: pointer;
                 @include media(">=200px","<=900px"){
-                    font-size: 2.5vw;
+                    height: 20px;
+                    text-align: center;
+                    margin: 10px;
+                    font-size: 3vw;
+                    padding: 2vw 2vw;
                 }
             }
             .playstoreButton{
@@ -115,6 +116,8 @@
             margin-left: -5vw;
             @include media(">=200px","<=900px"){
             width: 25vw;
+            margin-right: -2vw;
+            margin-left: -2vw;
             }
         }
         .title{

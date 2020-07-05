@@ -54,11 +54,11 @@
             <p class="available">NOW AVAILABLE ON</p>
             <div class="platformDownload">
                 <div class="androidContainer">
-                    <img class="image android" data-src="<%= require('./assets/images/android.svg')%>" alt="android-icon">
+                    <img class="image android" src="<%= require('./assets/images/android.svg')%>" alt="android-icon">
                     <a href="#"><button class="playstoreButton">PLAYSTORE</button></a> 
                 </div>
                 <div class="appleContainer">
-                    <img class="image apple" data-src="<%= require('./assets/images/apple.svg')%>" alt="apple-icon">
+                    <img class="image apple" src="<%= require('./assets/images/apple.svg')%>" alt="apple-icon">
                    <a href="#"><button class="appstoreButton">APPSTORE</button></a> 
                 </div>
             </div>
@@ -68,7 +68,7 @@
     <!-- About Page-->
     <div  id="about" class="container about">
         <img data-src="<%= require('./assets/images/Catch-bird.png')%>" alt="MyBirdy-Birdy" id="pic1" class="catchBird">
-        <div class="contentContainer" data-aos="fade-right">
+        <div class="contentContainer" data-aos="fade-right" data-aos-delay="1000">
             <h2 class="title">about us</h2>
             <p class="content">Birdy is your personal messenger bringing the best
                 shopping experience by offering the best deals
@@ -81,14 +81,14 @@
     <!-- Product Page-->
     <div class="container product"  id="product">
         <div class="downloadContainer">
-            <div class="contentContainer" data-aos="fade-left">
+            <div class="contentContainer" data-aos="fade-left" data-aos-delay="1000">
                 <h2 class="title">product & services</h2>
                 <p class="content">Become a proud Birdy now! Download our latest version
                     of the mybirdy app on android playstore or apple
                     appstore and get a chance to see the latest and spesh
                     deals near you!</p>
             </div>
-            <div class="downloadBar">
+            <div class="downloadBar" data-aos="fade-left" data-aos-delay="1000">
                 <p class="available">NOW AVAILABLE ON</p>
                 <div class="platformDownload">
                     <div class="androidContainer">
@@ -109,7 +109,7 @@
     <!-- Team Page-->
     <div class="container team"  id="team">
         <h1 class="title">meet the birdies!</h1>
-        <div class="members" data-aos="fade-up">
+        <div class="members">
             <div class="containerImage">
                 <img data-src="<%= require('./assets/images/sharath.png')%>" alt="Sarath Chandra Vasiraju" class="member image-1">
                 <h3 class="title">Sarath Chandra</h3>
@@ -144,12 +144,12 @@
                         <p class="text">Send us a mail!</p>
                     </a>
                 </div>  
-                <div class="contactWrap phone" data-aos="slide-right" data-aos-delay="110">
+                <div class="contactWrap phone" data-aos="slide-right" data-aos-delay="200">
                     <a href="tel:+919900927025">
                         <p class="text">+91-9900927025</p>
                     </a>
                 </div>  
-                <div class="contactWrap maps" data-aos="slide-right" data-aos-delay="120">
+                <div class="contactWrap maps" data-aos="slide-right" data-aos-delay="300">
                     <a href="https://www.google.com/maps/place/My+Birdy+Technologies+Pvt.+Ltd/@13.0098743,77.6414567,15z/data=!4m5!3m4!1s0x0:0xa1bc95357479f105!8m2!3d13.0103761!4d77.6481944">
                         <p class="text">🗺️ Open on Google Maps</p>
                     </a>
