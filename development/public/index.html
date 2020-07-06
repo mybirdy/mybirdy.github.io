@@ -38,7 +38,7 @@
 
     <!-- -->
     <title>MyBirdy Technologies : Home</title>
-    <link rel="preload stylesheet" as="style" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" as="style" href="https://unpkg.com/aos@next/dist/aos.css" />
         
     <link rel="preload" href="<%=require('./assets/fonts/Volte Medium.woff')%>" as="font">
     <link rel="preload" href="<%=require('./assets/fonts/Volte.woff')%>" as="font">
@@ -68,7 +68,7 @@
     <!-- About Page-->
     <div  id="about" class="container about">
         <img data-src="<%= require('./assets/images/Catch-bird.png')%>" alt="MyBirdy-Birdy" id="pic1" class="catchBird">
-        <div class="contentContainer" data-aos="fade-right" data-aos-delay="1000">
+        <div class="contentContainer" data-aos="fade-right">
             <h2 class="title">about us</h2>
             <p class="content">Birdy is your personal messenger bringing the best
                 shopping experience by offering the best deals
@@ -81,14 +81,14 @@
     <!-- Product Page-->
     <div class="container product"  id="product">
         <div class="downloadContainer">
-            <div class="contentContainer" data-aos="fade-left" data-aos-delay="1000">
+            <div class="contentContainer" data-aos="fade-left">
                 <h2 class="title">product & services</h2>
                 <p class="content">Become a proud Birdy now! Download our latest version
                     of the mybirdy app on android playstore or apple
                     appstore and get a chance to see the latest and spesh
                     deals near you!</p>
             </div>
-            <div class="downloadBar" data-aos="fade-left" data-aos-delay="1000">
+            <div class="downloadBar" data-aos="fade-left">
                 <p class="available">NOW AVAILABLE ON</p>
                 <div class="platformDownload">
                     <div class="androidContainer">
@@ -196,8 +196,8 @@
            </div>
     </footer>
 
-    <script async src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script async>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
       AOS.init();
     </script>
 </body>

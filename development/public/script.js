@@ -11,7 +11,7 @@ console.log(`%c  MYBIRDY TECHNOLOGIES
 import Bound from 'bounds.js';
 
 const boundary = Bound({
-    margins:{top: 5}
+    margins:{top: 0}
 })
     
 const image = document.querySelectorAll('[data-src]');
