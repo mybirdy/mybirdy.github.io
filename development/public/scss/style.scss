@@ -10,6 +10,62 @@
     scrollbar-width: thin;
 }
 
+body{
+    overflow:hidden;
+}
+
+.loadingContainer{
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    opacity:1;
+    overflow:hidden;
+    position: fixed;
+    z-index: 1000;
+    transition: all 1s ease-in;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+    .loader{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.navbar{
+    width: 100vw;
+    z-index: 999;
+    top:0;
+    position: fixed;
+
+    @include flexPara(row);
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.164);
+    @include media(">=200px","<=900px"){
+        display:none;
+    }
+    .navLogo{
+        width: 80px;
+        height: 80px;
+        margin-left: 20px;
+    }a{ color: black;}
+    .item{
+        @include fontPara(1,#000,600,0,1.0);
+        list-style: none;
+        padding-left:2px;
+        &:hover{
+            border-bottom: 1px solid red;
+        }
+    } 
+}
+
+
+
+
 .container{
     width: 100vw;
     height: 100vh;
@@ -150,7 +206,7 @@
         }
     }
     .contentContainer{
-        width: 60%;
+        width: 80%;
         @include media(">=200px","<=900px"){
             width: 90%;
             height: 30%;
@@ -170,7 +226,7 @@
         align-items: center;
         margin-left: 2vw;
         .contentContainer{
-            width: 95%;
+            width: 90%;
             align-self: center;
         }
         .downloadBar{
@@ -180,6 +236,7 @@
         }
     }
     .mybirdyApp{
+        width: 150%;
         @include media(">=200px","<=900px"){
             width: 95vw;
             height: auto;
@@ -267,6 +324,9 @@
         justify-content: center;
         align-items: center;
     }
+    .content{
+        padding-bottom: 20px;
+    }
     .contactWrap{
         width: 60%;
         border-radius: 20em;
@@ -279,12 +339,12 @@
             padding: 1em 1em;
          }
         .text{
-            color: white;
+            color: black;
         }
     }
-    .email{background-color:rgb(148, 76, 9); box-shadow: 2px 2px 4px rgba(148, 76, 9, 0.589);}
-    .phone{background-color:rgb(3, 57, 144); box-shadow: 2px 2px 4px rgba(3, 57, 144, 0.589);}
-    .maps{background-color:rgb(128, 5, 128); box-shadow: 2px 2px 4px rgba(128, 5, 128, 0.589)}
+    .email{background-color:#fff; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.328);}
+    .phone{background-color:#fff; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.328);}
+    .maps{background-color:#fff; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.328)}
 }
 
 .final{
@@ -317,6 +377,10 @@
             @include media(">=200px","<=900px"){
                 font-size: 2vw;
             }
+        }
+        .content{
+            font-size: 1vw;
+            text-align:center;
         }
     }
 }

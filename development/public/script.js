@@ -26,3 +26,12 @@ image.forEach(img=>{
     boundary.watch(img,enter(img));
 })
 
+
+/* Simple Loading */
+let loadingContainer = document.getElementById('loadingContainerId');
+let body = document.querySelector('body');
+window.addEventListener('load',()=>{
+    loadingContainer.style.opacity = 0;
+    body.style.overflow = 'visible';
+    loadingContainer.style.zIndex = -1;
+})

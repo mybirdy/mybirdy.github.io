@@ -5,12 +5,13 @@ SEO Setup:
 - [x] Webpack - Favicon Handling
 - [x] Social SEO Setup - Twitter tags, Open Graph Protocol Tags, Facebook 
 - [x] Webpack Gzip Compression
-- [ ] Change the Content of meta data Description (meta:company description)
-- [ ] Social Connections (Facebook, Twitter, Youtube, Instagram, Linked)
+- [x] Change the Content of meta data Description (meta:company description)
+- [x] Social Connections (Facebook, Twitter, Youtube, Instagram, Linked)
  
 Structure Setup:
 - [x] File Structure Clean up
-- [ ] ARIA Text and HTML5 Microdata
+- [ ] ARIA Text
+- [x] HTML5 Microdata
 - [x] SVG, PNG and Image Loader Test
 - [x] 404 Setup
 - [x] Custom 404 Page Design
@@ -18,28 +19,29 @@ Structure Setup:
 - [x] Index HTML Structure
 - [x] Fix Lazy Loading using Bounds.JS
 - [x] @TODO Pages: Home, About, Product, Teams, Contact
-- [ ] @Todo Actions:NavBar, Loading
+- [x] @Todo Actions:NavBar, Loading
 
 Styling Setup:
 - [x] SCSS Styling
 - [x] Image Loading and Optimization
-- [ ] Animations / Interactions
+- [x] Animations / Interactions
 - [x] Media Queries (BreakPoints: 200px, 900px, Retina2x)
-- [ ] SASS & JS clean up
+- [x] SASS & JS clean up
 
 Minification and Optimization:
 - [x] CSS Minify
 - [x] CSS Optimize
-- [ ] JS Minify
-- [ ] JS Optimize 
+- [x] JS Minify
+- [x] JS Optimize 
 - [x] CSS (preload), JS (async)
 
 Test Setup:
 - [x] SEO Testing (HTML Compression, Javascript Minification) 
 - [x] Usability Testing (Mobile, Tablet and Desktop Compactible)(Platforms: iOS, Android)
 - [x] Performance Testing
+- [ ] @TODO: Add Twitter, LinkedIn & Analytics
 
 Final:
 - [ ] Google Analytics
 - [x] Place 404 Page under root directory
-- [ ] Deploy (GitPages push into Organization)
+- [x] Deploy (GitPages push into Organization)
