@@ -6,7 +6,7 @@
     <br/>
 </h1>
 
-![build](https://img.shields.io/badge/build-success-brightgreen) ![npm](https://img.shields.io/badge/npm-6.10.2-green) ![BoundsJS](https://img.shields.io/badge/boundsjs-%5E1.0.4-green) ![inline-media](https://img.shields.io/badge/inline--media-%5E1.4.9-green) ![AOC](https://img.shields.io/badge/AOC-2.3.1-green) ![404](https://img.shields.io/badge/deploy-404-lightgrey)
+![build](https://img.shields.io/badge/build-success-brightgreen) ![npm](https://img.shields.io/badge/npm-6.10.2-green) ![BoundsJS](https://img.shields.io/badge/boundsjs-%5E1.0.4-green) ![inline-media](https://img.shields.io/badge/inline--media-%5E1.4.9-green) ![AOC](https://img.shields.io/badge/AOC-2.3.1-green) ![deployed](https://img.shields.io/badge/status-deployed-brightgreen)
 
 ## :bird: MyBirdy Technologies - [mybirdyapp.com](https://mybirdyapp.com)
 >:iphone: Mobile Application to redefine shopping
