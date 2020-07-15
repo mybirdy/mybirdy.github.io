@@ -8,24 +8,9 @@ console.log(`%c  MYBIRDY TECHNOLOGIES
 \t===m""m===  
 `,"font-family:monospace");
 
-import Bound from 'bounds.js';
+import AOS from 'aos';
 
-const boundary = Bound({
-    margins:{top: 0}
-})
-    
-const image = document.querySelectorAll('[data-src]');
-/* Lazy loading Images */
-const enter = (image) =>{
-    return() =>{
-        image.src = image.dataset.src;
-        boundary.unWatch(image);
-    }
-}
-image.forEach(img=>{
-    boundary.watch(img,enter(img));
-})
-
+AOS.init();
 
 /* Simple Loading */
 let loadingContainer = document.getElementById('loadingContainerId');

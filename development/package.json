@@ -35,7 +35,7 @@
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
-    "bounds.js": "^1.0.4",
+    "aos": "^2.3.4",
     "include-media": "^1.4.9"
   }
 }

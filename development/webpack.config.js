@@ -32,7 +32,7 @@ module.exports={
                     outputPath:'assets',
                     esModule:false
                 }
-            },'webp-loader?{quality:60}']
+            }]
         }]
     },
     plugins:[new HtmlWebpackPlugin({

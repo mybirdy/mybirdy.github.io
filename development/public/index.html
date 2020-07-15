@@ -38,9 +38,7 @@
 
     <!-- Add Facebook Pixels here : Async-->
 
-    <title>MyBirdy Technologies : Home</title>
-    <link rel="preload stylesheet" as="style" href="https://unpkg.com/aos@next/dist/aos.css" />
-        
+    <title>MyBirdy Technologies : Home</title>     
     <link rel="preload" href="<%=require('./assets/fonts/Volte Medium.woff')%>" as="font">
     <link rel="preload" href="<%=require('./assets/fonts/Volte.woff')%>" as="font">
 </head>
@@ -85,7 +83,7 @@
 
     <!-- About Page-->
     <div id="about" class="container about" itemscope itemtype="https://schema.org/Brand" >
-        <img data-src="<%= require('./assets/images/Catch-bird.png')%>" alt="MyBirdy-Birdy" id="pic1" class="catchBird">
+        <img src="<%= require('./assets/images/Catch-bird.png')%>" alt="MyBirdy-Birdy" id="pic1" class="catchBird">
         <div class="contentContainer" data-aos="fade-right">
             <h2 class="title">about us</h2>
             <p itemprop="description" class="content">MyBirdy Technologies is anemerging startup, 
@@ -111,17 +109,17 @@
                 <p class="available">NOW AVAILABLE ON</p>
                 <div class="platformDownload">
                     <div class="androidContainer">
-                        <img class="image android" data-src="<%= require('./assets/images/android.svg')%>" alt="android-icon">
+                        <img class="image android" src="<%= require('./assets/images/android.svg')%>" alt="android-icon">
                         <a href="#"><button class="playstoreButton">PLAYSTORE</button></a> 
                     </div>
                     <div class="appleContainer">
-                        <img class="image apple" data-src="<%= require('./assets/images/apple.svg')%>" alt="apple-icon">
+                        <img class="image apple" src="<%= require('./assets/images/apple.svg')%>" alt="apple-icon">
                     <a href="#"><button class="appstoreButton">APPSTORE</button></a> 
                     </div>
                 </div>
             </div>
         </div>
-        <img data-src="<%= require('./assets/images/png-mockup.png')%>" alt="mybirdy-app" id="pic2" class="mybirdyApp">
+        <img src="<%= require('./assets/images/png-mockup.png')%>" alt="mybirdy-app" id="pic2" class="mybirdyApp">
     </div>
 
 
@@ -130,22 +128,22 @@
         <h1 class="title">meet the birdies!</h1>
         <div class="members" itemscope itemtype="https://schema.org/Organization">
             <div class="containerImage">
-                <img data-src="<%= require('./assets/images/sharath.png')%>" alt="Sarath Chandra Vasiraju" class="member image-1">
+                <img src="<%= require('./assets/images/sharath.png')%>" alt="Sarath Chandra Vasiraju" class="member image-1">
                 <h4 class="title" itemprop="founder" >Sarath Chandra</h3>
                 <h5 class="content">Co-Founder (Marketing)</h6>
             </div>
             <div class="containerImage">
-                <img data-src="<%= require('./assets/images/megha.png')%>" alt="Megha Pandit" class="member image-2">
+                <img src="<%= require('./assets/images/megha.png')%>" alt="Megha Pandit" class="member image-2">
                 <h4 class="title" itemprop="founder" >Megha Pandit</h3>
                 <h5 class="content">Co-Founder (Operations)</h6>
             </div>
             <div class="containerImage">
-                <img data-src="<%= require('./assets/images/arun.png')%>" alt="Arun Babu Amperayani" class="member image-3">
+                <img src="<%= require('./assets/images/arun.png')%>" alt="Arun Babu Amperayani" class="member image-3">
                 <h4 class="title" itemprop="founder">Arun Babu</h3>
                 <h5 class="content">Co-Founder (Strategy)</h6>
             </div>
             <div class="containerImage">
-                <img data-src="<%= require('./assets/images/madan.png')%>" alt="Madan Kumar Amperayani" class="member image-4">
+                <img src="<%= require('./assets/images/madan.png')%>" alt="Madan Kumar Amperayani" class="member image-4">
                 <h4 class="title" itemprop="founder">Madan Kumar</h3>
                 <h5 class="content">Co-Founder (Technology)</h6>
             </div>
@@ -154,7 +152,7 @@
 
     <!-- Contact Page-->
     <div class="container contact"  id="contact">
-        <img data-src="<%= require('./assets/images/Call-svg.svg')%>" alt="MyBirdy-Support" class="catchBird">
+        <img src="<%= require('./assets/images/Call-svg.svg')%>" alt="MyBirdy-Support" class="catchBird">
         <div class="contentContainer">
             <h2 class="title">leave us a tweet!</h2>
                 <p class="content">Click to redirect</p>
@@ -178,18 +176,18 @@
 
      <!-- Final with Footer Page-->
      <div class="container final"  id="final">
-         <img data-src="<%=require('./assets/images/mockup-video.gif')%>" alt="mybirdyApp-video" class="mybirdyVideo">
+         <img src="<%=require('./assets/images/mockup-video.gif')%>" alt="mybirdyApp-video" class="mybirdyVideo">
             <div class="downloadBar">
                 <h3 class="title">DOWNLOAD MYBIRDY APP NOW!</h3>
                 <p class="content">MyBirdy App is currently under development and will be deployed for Android and iOS soon!</p>
                     <p class="available">NOW AVAILABLE ON</p>
                     <div class="platformDownload">
                         <div class="androidContainer">
-                            <img class="image android" data-src="<%= require('./assets/images/android.svg')%>" alt="android-icon">
+                            <img class="image android" src="<%= require('./assets/images/android.svg')%>" alt="android-icon">
                             <a href="#"><button class="playstoreButton">PLAYSTORE</button></a> 
                         </div>
                         <div class="appleContainer">
-                            <img class="image apple" data-src="<%= require('./assets/images/apple.svg')%>" alt="apple-icon">
+                            <img class="image apple" src="<%= require('./assets/images/apple.svg')%>" alt="apple-icon">
                         <a href="#"><button class="appstoreButton">APPSTORE</button></a> 
                         </div>
                     </div>
@@ -206,19 +204,14 @@
             <a href="https://angel.co/"><h6 class="title">CAREERS</h6></a>
            </div>
            <div class="socialLinks">
-              <a href="https://www.facebook.com/mybirdyapp/"><img data-src="<%=require('./assets/images/facebook.svg')%>" alt="facebook-icon" class="icons"></a> 
-              <a href="http://www.mybirdyapp.com"><img data-src="<%=require('./assets/images/twitter.svg')%>" alt="twitter-icon" class="icons"></a> 
-              <a href="https://www.instagram.com/mybirdyapp/"><img data-src="<%=require('./assets/images/instagram.svg')%>" alt="linkedin-icon" class="icons"></a> 
+              <a href="https://www.facebook.com/mybirdyapp/"><img src="<%=require('./assets/images/facebook.svg')%>" alt="facebook-icon" class="icons"></a> 
+              <a href="http://www.mybirdyapp.com"><img src="<%=require('./assets/images/twitter.svg')%>" alt="twitter-icon" class="icons"></a> 
+              <a href="https://www.instagram.com/mybirdyapp/"><img src="<%=require('./assets/images/instagram.svg')%>" alt="linkedin-icon" class="icons"></a> 
            </div>
            <div class="copyrights">
                 <h2 class="title">MYBIRDY TECHNOLOGIES © 2020 ALL RIGHTS RESERVED</h1>
-                <h3 class="content">DESIGNED & DEVELOPED BY VAISHAKH ANIL</h6>
+                <!-- <h6 class="content">DESIGNED & DEVELOPED BY VAISHAKH ANIL</h6> -->
            </div>
     </footer>
-
-    <script async src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
 </body>
 </html>
